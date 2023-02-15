@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css"  href="home.css">
+    <script src="script.js"></script>
+</head>
+<body>	
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>  
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<ul id="menu">
+	<!-- <li class="parent"><a href="#"></a> -->
+		
+	<li class="parent"><a href="#">HTML CSS</a>
+		<ul class="child">
+			<li><a href="#">Web Development1</a></li>
+			<li><a href="#">Web Development2</a></li>
+            <li><a href="#">Web Development3</a></li>
+			<li class="parent"><a href="#">Others<span class="expand">»</span></a>
+				<ul class="child">
+					<li><a href="#" nowrap>Web Development4</a></li>
+					<li><a href="#" nowrap>Web Development5</a></li>
+                    <li class="parent"><a href="#">Others<span class="expand">»</span></a>
+                        <ul class="child">
+                            <li><a href="#" nowrap>Web Development6</a></li>
+                            <li><a href="#" nowrap>Web Development7</a></li>
+                        </ul></li>
+				</ul></li>
+			<!-- <li><a href="#">Uno Cards</a></li> -->
+		</ul></li>
+	
+</ul>
+
+<div class="wrapper">
+    <div class="one">One</div>
+    <div class="two">Two</div>
+    <div class="three">Three</div>
+    <div class="four">Four</div>
+    <div class="five">Five</div>
+    <div class="six">Six</div>
+  </div>
+  
+
+<script>
+    $(document).ready(function(){
+      $('.dropdown-submenu a.test').on("click", function(e){
+        $(this).next('ul').toggle();
+        e.stopPropagation();
+        e.preventDefault();
+      });
+    });
+    </script>
+</body>
+</html>

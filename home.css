@@ -1,0 +1,122 @@
+body {
+    background-image: url('https://img.freepik.com/free-photo/top-view-person-writing-laptop-with-copy-space_23-2148708035.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+  }
+
+  #menu{
+    margin: 0 auto;
+    width: 400px;
+    padding: 10px;
+  }
+
+  .parent {
+	display: block;
+	position: relative;
+	float: left;
+	line-height: 30px;
+	background-color: #4FA0D8;
+	border-right: #CCC 1px solid;
+}
+
+.parent a {
+	margin: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.parent:hover>ul {
+	display: block;
+	position: absolute;
+}
+
+.child {
+	display: none;
+}
+
+.child li {
+	background-color: #E4EFF7;
+	line-height: 30px;
+	border-bottom: #CCC 1px solid;
+	border-right: #CCC 1px solid;
+	width: 100%;
+}
+
+.child li a {
+	color: #000000;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0px;
+	min-width: 10em;
+}
+
+ul ul ul {
+	left: 100%;
+	top: 0;
+	margin-left: 1px;
+}
+
+li:hover {
+	background-color: #95B4CA;
+}
+
+.parent li:hover {
+	background-color: #F0F0F0;
+}
+
+.expand {
+	font-size: 12px;
+	float: right;
+	margin-right: 5px;
+}
+
+.wrapper {
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 40px;
+  }
+  .one {
+    background-color: #95B4CA;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .two {
+    background-color: #4FA0D8;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .three {
+    background-color: #CCC;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .four {
+    background-color: aquamarine;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .five {
+    background-color: blueviolet;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .six {
+    background-color: aliceblue;
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
